@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+ background-color: beige;
+ padding: 0px;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+h3{
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+}
+h4{
+    text-align:center;
+    color: blue;
+}
+.image{
+    width: 270px;
+    height: 250px;
+    margin: 0px;
+margin-left: 41%;
+margin-right: 41%;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+#video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#cook{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 23px;
+}
+
+.rectangle11{
+    width: 1518px;
+    height: 176px;
+    margin: 0%;
+    
+  
+    background-color: rgb(12, 12, 12);
+  }
+  .vv{
+   
+    display: flex;
+  justify-content: center;
+    left: 15%;
+    
+  }
+  
+  .vv ul li{
+    position:relative;
+    top: -4%;
+  
+    text-decoration: none;
+   font-size: 14px;
+   font-weight: bold;
+    margin: 7px;
+  
+  }
+  .vv ul li a{
+  
+    text-decoration:none;
+  
+    color: rgb(237, 237, 243);
+  }
+  .vv ul li a:hover{
+   
+    background-color: #14F348;
+  
+    transition: .3s all ease-in;
+    cursor: pointer;
+  }
+  
+  .vv ul li :active{
+    transform: scale(0.96);
+    color: aqua;
+   }
+   @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .animated-text p {
+    animation: slide-in 5s ease 3;
+  
+  }

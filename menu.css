@@ -1,0 +1,189 @@
+h2{
+    text-align: center;
+    color: rgb(6, 225, 152);
+}
+h4{
+    text-align: center;
+    color: rgb(214, 238, 30);
+    font-size: 19px;
+}
+.icon{
+  position: absolute;
+  top: 0%;
+left:0%;
+margin-top: 0;
+  width: 150px;
+  height: 150px;
+}
+
+  .container{
+    display: flex;
+  }
+  .rectangle {
+    width: 400px;
+    height: 200px;
+    background-color:#F61016;
+    margin-right: 10px; /* Adjust the margin as per your preference */
+    
+
+  }
+  .rectangle:hover{
+    background-color: rgb(233, 239, 53);
+    transition: .4s all ease-in;
+    cursor: pointer;
+   
+
+  }
+  .rectangle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .rectangle {
+    animation-name:slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:1s;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .pawn{
+    justify-content: center;
+    width: 400px;
+    height: 210px;
+   }
+ 
+ .p{
+  display: center;
+ }
+
+
+ .container1 {
+  display: flex;
+}
+
+.rectangle1 {
+  width: 400px;
+  height: 200px;
+  background-color: #F61016;
+  margin-right: 10px; /* Adjust the margin as per your preference */
+}
+.rectangle1:hover{
+  background-color: rgb(209, 234, 15);
+  transition: .4s all ease-in;
+   
+cursor: pointer;
+}
+ 
+
+.rec{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rec1{
+  width: 85%;
+  height: 90%;
+ 
+  object-fit: cover;
+}
+.rectangle1 {
+  animation:fade-in 2s ease-in-out ;
+  animation-iteration-count:2;
+  
+}
+
+@keyframes fade-in {
+  from{ opacity: 0;}
+  to{ opacity: 1;}
+}
+.ord{
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.ords{
+  font-size: 18px;
+  font-weight: bold;
+}
+.ords:hover{
+
+  background-color: aqua;
+  cursor: pointer;
+  
+}
+
+.icons{
+  position: absolute;
+  top: 94%;
+  left:-1%;
+  width: 138px;
+  height: 120px;
+}
+.quote{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.quote{
+  animation: slideIn 1s ease-in-out;
+  animation-iteration-count:infinite;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
+.rectangle11{
+  width: 1518px;
+  height: 174px;
+  background-color: rgb(227, 247, 11);
+}
+.vv{
+ 
+  display: flex;
+  justify-content: center;
+  
+}
+
+.vv ul li{
+  
+  text-decoration: none;
+ font-size: 13px;
+ font-weight: bold;
+  margin: 7px;
+
+}
+.vv ul li a{
+
+  text-decoration:none;
+
+  color: blue;
+}
+.vv ul li a:hover{
+ 
+  background-color: #14F348;
+
+  transition: .3s all ease-in;
+  cursor: pointer;
+}
+
+.vv ul li :active{
+  transform: scale(0.96);
+  color: aqua;
+ }

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 3px;
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(5, 1, 1);
+  font-weight: bold;
+}
+hr{
+  background-color:blue ;
+}
+#logo{
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  left: 2px;
+  margin: 0;
+  top: -1%;
+}
+
+form{
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 750px;
+    margin-left: 20%;
+    background-color: beige;   
+    
+}
+input[type=checkbox] {
+    border: 2px solid rgb(47, 120, 229);
+    border-radius: 4px;
+    color: black;
+margin-left: 100px;
+  }
+  #chili{
+    text-align: left;
+  }
+  .mms{
+    margin: 0;
+    padding: 0%;
+    margin-left: 40%;
+  }
+  .mms{
+    margin: 0;
+    padding: 0%;
+    margin-left: 40%;
+  }
+  input[type="text"] {
+    width: 40%;
+    height: 20px;
+
+    color: black;
+margin-left: 5px;}
+
+.quantity-counter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  align-items: ;
+}
+
+.quantity-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.quantity-display {
+  padding: 0 10px;
+  font-size: 16px;
+}
+#submitb{
+  width: 95px;
+  color: aqua;
+  font-weight: bold;
+  font-size: 20px;
+margin-right: 15%;
+  align-items: center;
+  justify-content: center;
+}
+#test{
+  text-align: center;
+  color: blue;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+   
+  }
+  
+  .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+  }  

@@ -1,0 +1,263 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.home{
+  background-color:white;
+  display: flex;
+  justify-content: right;
+  height: 29px;
+width: 100%;
+ 
+}
+
+.home ul{
+  position: fixed;
+    display: flex;
+    float: right;
+}
+.home ul li{
+  
+    list-style-type: none;
+   font-size: 20px;
+   font-weight: bold;
+    margin: 7px;
+ 
+}
+.home ul li a{
+
+  
+    text-decoration:none;
+ 
+    color: black;
+}
+.home ul li a:hover{
+   
+    background-color: blue;
+    transition: .4s all ease-in;
+  cursor: pointer;
+}
+.home ul li :active{
+    transform: scale(0.96);
+    color: aqua;
+   }
+.home {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.logo{
+  position: fixed;
+    margin: 1px;
+    font-size: 20px;
+    color: blue;
+    margin-top: 8px;
+}
+
+.banner img{
+    width: 100%;
+    height: 100vh;
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+   }
+   .order{
+
+    position:absolute ;
+    top:30%;
+    left: 75%;
+    font-size: 20px;
+    text-decoration: none;
+    
+  }
+  .button{
+    position:absolute;
+   text-decoration: none;
+    top:50%;
+    left: 78%;
+    font-size: 24px;
+    padding: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 30px;
+    border-radius: 10px;
+    border:none;
+    transition: all 0.2 ease;
+   
+   }
+   button:active{
+    transform: scale(0.96);
+   }
+button:hover {
+    background-color: blue;
+    transition: .4s all ease-in;
+   
+    cursor: pointer;
+  }
+  .halal{
+    width: 150px;
+    height:40px;
+position: absolute;
+    top: 90%;
+    right:90%;
+  }
+  .about{
+    position: absolute;
+    top:64%;
+    right: 10%;
+    font-size: 20px;
+    color: rgb(1, 1, 9);
+text-transform: capitalize;
+  }
+  .des{
+    position: absolute;
+    top:5%;
+    right: 1%;
+    
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+  }
+ 
+  .button2{
+    position:absolute;
+    background-color: blanchedalmond;
+    top:68%;
+    right: 0%;
+    padding: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 18px;
+    border-radius: 10px;
+    border:none;
+    transition: all 0.2 ease;}
+    box-shadow: 0 0 2px cyan, 0 0 15px cyan;
+
+.button2:hover {
+        background-color: rgb(215, 132, 233);
+        transition: .4s all ease-in;
+       box-shadow: 0 0 2px cyan, 0 0 15px cyan;
+        cursor: pointer;
+      }
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: #14F348;
+}
+.rectangle10{
+  width: 1518px;
+  height: 174px;
+  background-color: beige;
+}
+.h{
+ 
+  display: flex;
+  justify-content: center;
+
+ 
+}
+
+.h ul li{
+  
+ 
+ font-size: 15px;
+ font-weight: bold;
+  margin: 7px;
+
+}
+.h ul li a{
+
+  text-decoration:none;
+
+  color: blue;
+}
+.h ul li a:hover{
+ 
+  background-color: #14F348;
+  transition: .3s all ease-in;
+cursor: pointer;
+}
+.h ul li :active{
+  transform: scale(0.96);
+  color: aqua;
+ }
+ .imageee{
+ width: 200px;
+    height:100px;
+    position: absolute;
+    top: 112%;
+    left: 86%;
+  
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animated-text h1, .order,p,h3 {
+  animation: slide-in 2s ease 1;
+
+}
+@media screen and (max-width:700px) {
+  .home{
+    background-color:white;
+    display: flex;
+    justify-content: right;
+    height: 25px;
+  width: 100%;
+   
+}
+}
+@media screen and (max-width:700px) {
+.home ul{
+  position: fixed;
+    display: flex;
+    float: right;
+}}
+
+@media screen and (max-width:700px) {
+.home ul li{
+  
+}
+}
+@media screen and (max-width:700px) {
+.home ul li a{
+
+  
+    text-decoration:none;
+ 
+    color: black;
+}}
+
+@media screen and (max-width:700px) {
+.home ul li a:hover{
+   
+    background-color: blue;
+    transition: .4s all ease-in;
+  cursor: pointer;
+}}
+
+
+@media screen and (max-width:700px) {
+.banner img{
+ 
+ background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+ }

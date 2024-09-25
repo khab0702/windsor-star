@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oo.css">
+    <link rel="icon" href="image/n_848c59c-3819-49c9-af28-cc434@2x.png">
+    <title>Order Form</title>
+    <script src="script.js"></script>
+    <script>
+        function validateForm() {
+            var menu = document.getElementById("menu").value;
+            var instructions = document.getElementsByName("instructions")[0].value;
+            var quantity = document.querySelector(".quantity-display").innerText;
+
+            if (menu === "") {
+                alert("Please choose a menu item");
+                return false;
+            }
+
+            if (instructions.trim() === "") {
+                alert("Please enter any special instructions");
+                return false;
+            }
+
+            if (isNaN(quantity) || parseInt(quantity) <= 0) {
+                alert("Please enter a valid quantity");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>WINDSOR STAR GRILL(ORDER FORM)</h2>
+    <hr color="blue"/>
+    <img src="image/WhatsApp Image 2023-07-24 at 23.12.43.jpeg" id="logo">
+    <br>
+    <form action="process_order.php" method="post" onsubmit="return validateForm()">
+        <br>
+        <label for="menu" id="menu">CHOOSE MENU!</label>
+        <select name="menu" id="menu">
+            <option value="">Select Menu</option>
+            <option value="AGNEAU(LAMB)">AGNEAU(LAMB)</option>
+            <option value="FILLET GRILL">FILLET GRILL</option>
+            <option value="BROCHETTE GRILL">BROCHETTE GRILL</option>
+            <option value="MIX GRILL">MIX GRILL</option>
+            <option value="LA CUISSE">LA CUISSE</option>
+            <option value="BEEF">BEEF</option>
+            <option value="BURGER PATTY">BURGER PATTY</option>
+            <option value="BEEF BURGER">BEEF BURGER</option>
+            <option value="ROUNDER">ROUNDER</option>
+            <option value="WRAP">WRAP</option>
+            <option value="PANINI">PANINI</option>
+            <option value="FISH GRILL">FISH GRILL</option>
+            <option value="PRAWN(CREVTTE)">PRAWN(CREVTTE)</option>
+            <option value="SHARWARMA PLAT">SHARWARMA PLATE</option>
+            <option value="KEBAB">KEBAB</option>
+        </select>
+        <h4 align="center">Size (required):</h4>
+        <input type="checkbox" id="without_fries" name="without_fries" value="without_fries" class="service-checkbox">
+        <label for="without_fries" class="service-label">Without Fries</label><br>
+        <p id="fries"></p>
+        <input type="checkbox" onclick="myfunction()" name="with_fries"> With Fries
+        <p id="demo"></p>
+        <h4 id="demo">Sauce in the fries (optional):</h4>
+        <div id="mm">
+            Chili<input type="checkbox" name="chili" style="float:left;"><br>
+            Tomato<input type="checkbox" name="tomato" style="float: left;"><br>
+            Mayonnaise<input type="checkbox" name="mayonnaise" style="float: left;">
+        </div>
+        <h4 id="demo">Sauce in Menu:</h4>
+        <div id="mm">
+            Chili<input type="checkbox" name="ss[]" value="Chili" style="float:left;"><br>
+            With Less Chili<input type="checkbox" name="ss[]" value="Less Chili" style="float:left;"><br>
+            Tomato<input type="checkbox" name="ss[]" value="Tomato" style="float: left;"><br>
+            With Less Tomato <input type="checkbox" name="ss[]" value="Less Tomato" style="float:left;"><br>
+            Mayonnaise<input type="checkbox" name="ss[]" value="Mayonnaise" style="float: left;"><br>
+            With Less Mayonnaise<input type="checkbox" name="ss[]" value="Less Mayonnaise" style="float:left;"><br>
+            Separate<input type="checkbox" name="ss[]" value="Separate" style="float:left;">
+        </div>
+        <p><b>Choose any add-ons</b></p>
+        <div id="mms">
+            EGG<input type="checkbox" name="ss[]" value="EGG" style="float:left;"> <b>RS:+40.00</b><br>
+            AGNEAU<input type="checkbox" name="ss[]" value="AGNEAU" style="float:left;"> <b>RS:+150.00</b><br>
+            CHIPS<input type="checkbox" name="ss[]" value="CHIPS" style="float: left;"> <b>RS:+40.00</b><br>
+            FILLET<input type="checkbox" name="ss[]" value="FILLET" style="float:left;"> <b>RS:+75.00</b><br>
+            HOTDOG<input type="checkbox" name="ss[]" value="HOTDOG" style="float: left;"> <b>RS:+35.00</b><br>
+            leg<input type="checkbox" name="ss[]" value="leg" style="float:left;"> <b>RS:+110.00</b><br>
+            BROCHETTE<input type="checkbox" name="ss[]" value="BROCHETTE" style="float:left;"> <b>RS:+110.00</b><br>
+            CHEDDAR<input type="checkbox" name="ss[]" value="CHEDDAR" style="float:left;"> <b>RS:+40.00</b><br>
+            SLICE CHEESE<input type="checkbox" name="ss[]" value="SLICE CHEESE" style="float:left;"> <b>RS:+15.00</b><br>
+        </div>
+        <p><b>Special instructions</b></p>
+        <input type="text" name="instructions" placeholder="Enter any instructions you want in your menu" required>
+        <br><br>
+        <p>Enter quantity</p>
+        <div class="quantity-counter">
+            <button class="quantity-btn minus-btn" onclick="changeQuantity(-1)">-</button>
+            <span class="quantity-display">1</span>
+            <button class="quantity-btn plus-btn" onclick="changeQuantity(1)">+</button>
+        </div>
+        <br><br>
+        <button type="submit" name="form">Submit</button>
+    </form>
+    <footer>
+        <div class="copyright">&copy; 2023 WINDSOR STAR GRILL. All rights reserved.</div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/WSGRestaurant?mibextid=9R9pXO" target="_blank">
+                <img src="image/download (30).png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <img src="image/logo-instagram-png-13547.png" alt="Instagram">
+            </a>
+            <a href="windsorstargrill@gmail.com">
+                <img src="image/4672500.png" alt="Email">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

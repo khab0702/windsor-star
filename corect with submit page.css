@@ -1,0 +1,75 @@
+body{
+    background-color: beige;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+h2{
+  
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    margin: 10%;
+ 
+}
+
+.rectangle10{
+    width: 1520px;
+    height: 188px;
+    background-color: rgb(11, 11, 11);
+    margin-top: 10%;
+  }
+  .h{
+   
+    display: flex;
+    justify-content: center;
+  
+   
+  }
+  
+  .h ul li{
+    
+   
+   font-size: 15px;
+   font-weight: bold;
+    margin: 7px;
+  
+  }
+  .h ul li a{
+  
+    text-decoration:none;
+  
+    color: blue;
+  }
+  .h ul li a:hover{
+   
+    background-color: #14F348;
+    transition: .3s all ease-in;
+  cursor: pointer;
+  }
+  .h ul li :active{
+    transform: scale(0.96);
+    color: aqua;
+   }
+   .imageee{
+   width: 200px;
+      height:100px;
+      position: absolute;
+      top: 112%;
+      left: 86%;
+    
+  }
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .animated-text h1,h2,.rectangle10,h,ul,li{
+    animation: slide-in 3s ease ;
+  
+  }

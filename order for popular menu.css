@@ -1,0 +1,285 @@
+*{
+    margin: 0%;
+    padding: 0;
+
+    opacity: 100%;
+}
+#myicon{
+   width: 50px;
+   height: 50px;
+}
+#logo{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -2.5%;
+}
+form{
+    padding:5px;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin-left: 20%;
+   
+    background-color: rgb(180, 178, 175);
+   
+    
+}
+
+input[type=text] {
+    border: 2px solid rgb(47, 120, 229);
+    border-radius: 4px;
+  }
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(5, 1, 1);
+    font-weight: bold;
+}
+hr{
+    background-color:blue ;
+}
+
+
+
+#class{
+    text-align: center;
+    text-decoration: underline ;
+    font-size:22px;
+    font-weight: bold;
+}
+#agneau{
+    display: inline-block;
+    margin-right:70px ;
+    font-weight: bold;
+    color:black;
+}
+#agneau:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+#fillet{
+    display: inline-block;
+    margin-right:70px ;
+    font-weight: bold;
+    color:black;
+
+}
+#fillet:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+#brochette{
+    display: inline-block;
+    margin-right:30px ;
+    font-weight: bold;
+    color:black;
+}
+#brochette:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+#mix-grill{
+    display: inline-block;
+    margin-right:110px ;
+    font-weight: bold;
+    color:black;
+}
+#mix-grill:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+#cuisse{
+    display: inline-block;
+    margin-right:30px ;
+    font-weight: bold;
+    right: 70%;
+    color:black;
+}
+#cuisse:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+#beef{
+    display: inline-block;
+   margin-left: 50px;
+    font-weight: bold;
+    color:black;
+
+}
+#beef:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+#rounder{
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    text-decoration: underline;
+    color: blue;
+}
+#rounderf{
+    display: inline-block;
+   margin-left: 0px;
+    font-weight: bold;
+    color:black;
+
+}
+#rounderf:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+#rounderA{
+    display: inline-block;
+   margin-left: 30px;
+    font-weight: bold;
+    color:black;
+
+}
+#rounderA:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+input[type=button] {
+    color: blue;
+  }
+
+#rounderb{
+    display: inline-block;
+   margin-left: 30px;
+    font-weight: bold;
+    color:black;
+
+}
+#rounderb:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+input[type=button] {
+    color: blue;
+  }
+  #wrap:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+text-decoration: none;
+}
+#wrap{
+    margin: ;
+    color: black;
+    text-decoration:none;
+    font-weight: bold;
+}
+#rounderu{
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#rounderCC{
+   
+    position: relative;
+    margin-top: -4.6%;
+    margin-left: 27%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.ll{
+    color: aqua;
+}
+.rectangle11{
+    width: 1518px;
+    height: 174px;
+    background-color: rgb(231, 235, 204);
+  }
+  .vv{
+   
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .vv ul li{
+    
+    text-decoration: none;
+   font-size: 15px;
+   font-weight: bold;
+    margin: 7px;
+  
+  }
+  .vv ul li a{
+  
+    text-decoration:none;
+  
+    color: blue;
+  }
+  .vv ul li a:hover{
+   
+    background-color: #14F348;
+  
+    transition: .3s all ease-in;
+    cursor: pointer;
+  }
+  
+  .vv ul li :active{
+    transform: scale(0.96);
+    color: aqua;
+   }
+   footer {
+    text-align: center;
+    padding: 20px;
+   
+  }
+  
+  .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+  }
+  #rounderff{
+    display: inline-block;
+   margin-left: 0px;
+    font-weight: bold;
+    margin-left: 15px;
+    color:black;
+
+}
+#rounderff:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+#rounderAA{
+    display: inline-block;
+   margin-left: 30px;
+    font-weight: bold;
+    color:black;
+    margin-left: 1px;
+
+}
+#rounderAA:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
+#rounderfff{
+    display: inline-block;
+   margin-left: 30px;
+    font-weight: bold;
+    color:black;
+    margin-right: 0;
+
+}
+#rounderfff:hover{
+    background-color: rgb(229, 135, 11);
+    cursor: pointer;
+
+}
